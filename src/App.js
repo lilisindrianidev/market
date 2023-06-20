@@ -6,7 +6,7 @@ import {Sukses, Home} from './pages';
 export default class App extends Component{
   render(){
     return(
-      <BrowserRouter>
+      <BrowserRouter basename={window.location.pathname || '*'}>
         <NavbarComponent/>
         <main>
           <Switch>
